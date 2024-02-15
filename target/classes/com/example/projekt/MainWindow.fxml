@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane stylesheets="css/styles.css" fx:id="aaaa" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.MainController">
+<AnchorPane fx:id="aaaa" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="800.0" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.MainController">
    <children>
-      <TableView fx:id="tabela" layoutX="-1.0" layoutY="32.0" prefHeight="465.0" prefWidth="800.0" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+      <TableView fx:id="tabela" layoutX="-1.0" layoutY="50.0" prefHeight="447.0" prefWidth="800.0" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
         <columns>
           <TableColumn fx:id="nrVin" prefWidth="75.0" text="nrVin" />
           <TableColumn fx:id="marka" onEditCommit="#edytujWiersz" prefWidth="75.0" text="Marka" />
@@ -31,7 +31,7 @@
       <ToolBar layoutY="2.0" prefHeight="31.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
          <items>
             <Label fx:id="labelStartowy" prefHeight="17.0" prefWidth="99.0" text="Label" />
-            <Button fx:id="wyloguj" mnemonicParsing="false" onAction="#wylogujUzytkownika" prefHeight="25.0" prefWidth="64.0" text="Wyloguj" />
+            <Button fx:id="wyloguj" mnemonicParsing="false" onAction="#wylogujUzytkownika" prefHeight="38.0" prefWidth="120.0" text="Wyloguj" />
             <Button fx:id="pomoc" mnemonicParsing="false" onAction="#pomocDialog" text="Pomoc" />
             <TextField fx:id="szukaj" onAction="#onTyping" />
             <ChoiceBox fx:id="wyborSzukaj" prefWidth="150.0" />
@@ -39,17 +39,17 @@
       </ToolBar>
       <HBox alignment="BASELINE_CENTER" layoutY="494.0" prefHeight="77.0" prefWidth="800.0" scaleShape="false" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Button fx:id="dodajWierszprzycisk" cache="true" maxWidth="600.0" mnemonicParsing="false" onAction="#dodajWiersz" prefHeight="105.0" prefWidth="200.0" text="Dodaj auto" HBox.hgrow="ALWAYS" />
+            <Button fx:id="dodajWierszprzycisk" cache="true" maxWidth="600.0" mnemonicParsing="false" onAction="#dodajWiersz" prefHeight="105.0" prefWidth="140.0" text="Dodaj auto" HBox.hgrow="ALWAYS" />
             <Button fx:id="usunWierszprzycisk" maxWidth="600.0" mnemonicParsing="false" onAction="#usunWiersz" prefHeight="105.0" prefWidth="200.0" text="Usuń auto" HBox.hgrow="ALWAYS" />
             <Button fx:id="edytujWierszprzycisk" maxWidth="600.0" mnemonicParsing="false" onAction="#zapiszDoTxt" prefHeight="105.0" prefWidth="200.0" text="Generuj raport" HBox.hgrow="ALWAYS" />
             <VBox prefHeight="105.0" prefWidth="200.0">
                <children>
-                  <RadioButton fx:id="ladny" mnemonicParsing="false" prefHeight="53.0" prefWidth="200.0" text="Ładny raport">
+                  <RadioButton fx:id="ladny" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="170.0" text="Ładny raport">
                      <toggleGroup>
                         <ToggleGroup fx:id="a" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="tradycyjny" mnemonicParsing="false" prefHeight="52.0" prefWidth="200.0" selected="true" text="Tradycyjny raport" toggleGroup="$a" />
+                  <RadioButton fx:id="tradycyjny" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="170.0" selected="true" text="Tradycyjny raport" toggleGroup="$a" />
                </children>
             </VBox>
          </children>
