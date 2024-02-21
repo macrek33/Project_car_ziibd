@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.FormularzDodawania">
+   <children>
+      <TextField fx:id="nrVin" layoutX="193.0" layoutY="180.0" promptText="Numer Vin" />
+      <TextField fx:id="marka" layoutX="465.0" layoutY="180.0" promptText="Marka" />
+      <TextField fx:id="model" layoutX="193.0" layoutY="260.0" promptText="Model" />
+      <TextField fx:id="rokProdukcji" layoutX="465.0" layoutY="260.0" promptText="Rok produkcji" />
+      <TextField fx:id="silnik" layoutX="193.0" layoutY="347.0" promptText="Silnik" />
+      <TextField fx:id="paliwo" layoutX="465.0" layoutY="347.0" promptText="Paliwo" />
+      <Label layoutX="193.0" layoutY="156.0" text="Numer Vin:" />
+      <Label layoutX="465.0" layoutY="156.0" text="Marka:" />
+      <Label layoutX="193.0" layoutY="236.0" text="Model:" />
+      <Label layoutX="465.0" layoutY="236.0" text="Rok produkcji:" />
+      <Label layoutX="193.0" layoutY="321.0" text="Silnik:" />
+      <Label layoutX="469.0" layoutY="321.0" text="Paliwo:" />
+      <Button fx:id="powrot" layoutX="235.0" layoutY="424.0" mnemonicParsing="false" onAction="#powrotDoProgramu" text="Powrót" />
+      <Button fx:id="dodaj" layoutX="488.0" layoutY="424.0" mnemonicParsing="false" onAction="#dodajWiersz" text="Dodaj wiersz" />
+      <Label fx:id="nrVinBlad" layoutX="125.0" layoutY="139.0" prefHeight="19.0" prefWidth="280.0" />
+      <Label fx:id="markaBlad" layoutX="421.0" layoutY="139.0" prefHeight="19.0" prefWidth="260.0" />
+      <Label fx:id="modelBlad" layoutX="125.0" layoutY="219.0" prefHeight="19.0" prefWidth="280.0" />
+      <Label fx:id="rokProdukcjiBlad" layoutX="423.0" layoutY="219.0" prefHeight="19.0" prefWidth="260.0" />
+      <Label fx:id="silnikBlad" layoutX="139.0" layoutY="304.0" prefHeight="19.0" prefWidth="280.0" />
+      <Label fx:id="paliwoBlad" layoutX="421.0" layoutY="304.0" prefHeight="19.0" prefWidth="260.0" />
+      <Label fx:id="komunikat" layoutX="281.0" layoutY="393.0" prefHeight="19.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>
